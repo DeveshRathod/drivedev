@@ -23,8 +23,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 //server
-app.listen(3000, () => {
-  console.log("server running");
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
 //routes
