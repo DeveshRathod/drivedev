@@ -20,7 +20,7 @@ const Files = () => {
 
     try {
       const response = await Promise.all([
-        axios.get("http://localhost:3000/api/v1/data/homepage", {
+        axios.get("/api/v1/data/homepage", {
           headers: { authorization: `${token}` },
         }),
         new Promise((resolve) => setTimeout(resolve, 1000)),
@@ -44,7 +44,7 @@ const Files = () => {
         try {
           const response = await Promise.all([
             axios.post(
-              "http://localhost:3000/api/v1/data/search",
+              "/api/v1/data/search",
               { searchQuery },
               { headers: { authorization: `${token}` } }
             ),
