@@ -5,7 +5,7 @@ import Card from "../components/Card";
 import { FaSearch, FaPlus } from "react-icons/fa";
 import emptyFolder from "../resources/empty.png";
 import Loader from "../components/Loader";
-import AddPopup from "../components/AddPopUp";
+import AddPopup from "../components/AddPopup.jsx";
 
 const Files = () => {
   const [files, setFiles] = useState([]);
