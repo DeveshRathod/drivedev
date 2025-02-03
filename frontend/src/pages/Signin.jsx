@@ -33,8 +33,8 @@ const Signin = () => {
 
   return (
     <Layout>
-      <div className="flex items-center justify-center min-h-[calc(100vh-70px)] p-4">
-        <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+      <div className="flex items-start justify-center min-h-[calc(100vh-70px)] p-4 pt-10">
+        <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg mt-4 md:mt-0">
           <h2 className="text-3xl font-extrabold text-center text-blue-600 mb-6">
             Welcome Back!
           </h2>

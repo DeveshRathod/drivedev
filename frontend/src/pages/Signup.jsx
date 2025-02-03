@@ -28,7 +28,7 @@ const Signup = () => {
       navigate("/");
     } catch (error) {
       console.error(
-        "Signin failed:",
+        "Signup failed:",
         error.response?.data?.message || error.message
       );
     }
@@ -36,15 +36,15 @@ const Signup = () => {
 
   return (
     <Layout>
-      <div className="flex items-center justify-center min-h-[calc(100vh-70px)] p-4">
-        <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+      <div className="flex items-start justify-center min-h-[calc(100vh-70px)] p-4 pt-10">
+        <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-lg mt-4 md:mt-0">
           <h2 className="text-3xl font-extrabold text-center text-blue-600 mb-6">
             Create an Account
           </h2>
           <p className="text-gray-600 text-center mb-6">
             Sign up to get started with your account.
           </p>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2">
                 Email
@@ -56,6 +56,7 @@ const Signup = () => {
                 onChange={handleChange}
                 placeholder="Enter your email"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required
               />
             </div>
 
@@ -70,6 +71,7 @@ const Signup = () => {
                 onChange={handleChange}
                 placeholder="Enter your password"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required
               />
             </div>
 
@@ -84,12 +86,12 @@ const Signup = () => {
                 onChange={handleChange}
                 placeholder="Re-enter your password"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required
               />
             </div>
 
             <button
               type="submit"
-              onClick={handleSubmit}
               className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200 font-semibold"
             >
               Sign Up
