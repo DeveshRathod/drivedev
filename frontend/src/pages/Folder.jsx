@@ -5,8 +5,8 @@ import axios from "axios";
 import Card from "../components/Card";
 import { FaSearch, FaPlus } from "react-icons/fa";
 import emptyFolder from "../resources/empty.png";
-import Loader from "../components/Loader";
-import AddPopup from "../components/AddPopUp";
+import Loader from "../components/Loader.jsx";
+import AddPopup from "../components/AddPopup.jsx";
 
 const Folder = () => {
   const { id } = useParams();
