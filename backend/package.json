@@ -1,9 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "cd backend && nodemon index.js",
-    "start": "cd backend && node index.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "dev": "nodemon backend/index.js",
+    "start": "node backend/index.js",
+    "build": "npm install && (cd frontend && npm install && npm run build)"
   },
   "dependencies": {
     "@aws-sdk/s3-request-presigner": "^3.735.0",
