@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
 ## Demo
 
-![App Demo](https://media.giphy.com/media/j5QcmXoFWl4Q0/giphy.gif)
+![App Demo]([https://media.giphy.com/media/j5QcmXoFWl4Q0/giphy.gif](https://drive.google.com/file/d/12K5E4gYXCzI-SRLQSEtVjQcgPub7yEgR/view?usp=sharing))
